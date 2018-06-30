@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>RCK Token (RCKT)</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style type="text/css">
+</style>
+
+</head>
+
+<body>
+
+<div id="coming-soon">
+
+<h1>Welcome to RCK Token (RCKT)</h1>
+
+<p>RCK Token is a sample token build on Ethereum Blockchain.</p>
+<br/>
+<p>RCK Token price is <span class="token-price"></span> Ether.</p>
+<br/>
+<!--<form method="post">
+	<div id="subscribe">
+		<input type="text" placeholder="How many RCK tokens you wanna buy ? (*_*)">
+		<input type="submit" value="Submit">
+		<div class="clear"></div>
+	</div>
+</form> -->
+
+<form onSubmit="App.buyTokens(); return false;" role="form">
+	<div align="center">
+		<input type="number" id="numberOfTokens" value="1" min="1" pattern="[0-9]">
+		<input type="submit" value="Buy">
+		<div class="clear"></div>
+	</div>
+</form>
+<br/>
+<p>Your Balance is <span class="rck-balance"></span>&nbsp;RCKT.</p>
+<br/>
+<p><span class="tokens-sold"></span> / <span class="tokens-available"></span> tokens sold</p>
+<p id="accountAddress"></p>
+<br/>
+<br/>
+<p>Note: This token sale uses the Test Network with fake ether.<br/>Use Metamask to connect to the test network.<br/>Thank you ! (*_*)</p>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
